@@ -11,7 +11,6 @@ nasdaq_industries = nasdaq_screener['Industry'].tolist()
 nasdaq_sectors = nasdaq_screener['Sector'].tolist()
 
 selected_industries = st.multiselect("Pick industries", nasdaq_industries, default=["Electrical Products"])
-selected_industries=["Electrical Products"]
 
 # get yahoo data
 df = pd.DataFrame()
